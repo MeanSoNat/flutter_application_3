@@ -50,7 +50,7 @@ class PersonListItem {
   }
 }
 ```
-## ./lib/provider
+## ./lib/provider/provider.dart
 <p>
 provider ใช้ในการดึง Data มา แบบ json แล้ว import model มา
 โดย APIs ที่ใช้ในครั้งนี้จะใช้เป็น SWAPI มาเป็นตัวอย่างในการดึงครับ
@@ -79,4 +79,19 @@ class Provider {
   }
 }
 
+```
+## ./lib/service/perSonService.dart
+<p>ใช้ในการทำ Service ต่อกับ provider ให้ส่วนของ view ได้ใช้</p>
+```Dart
+import 'package:flutter_application_3/model/peronlist.dart';
+import 'package:flutter_application_3/provider/provider.dart';
+
+class Service {
+  Provider _provider = new Provider();
+
+  Future<PersonList> getPeronList() {
+    
+    return _provider.getPeronList();
+  }
+}
 ```
