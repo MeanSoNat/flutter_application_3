@@ -6,7 +6,7 @@
 flutter pub add http
 ```
 ## APIs
-    <strong>https://swapi.dev/api/people</strong>
+    https://swapi.dev/api/people
 
 ## Generate JSON to Dart
 แปลง json response ด้วย <strong><a href="https://app.quicktype.io/">QuickType</a></strong>
