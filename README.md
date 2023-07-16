@@ -1,6 +1,6 @@
-## Flutter get Data From APIs
+# Flutter get Data From APIs
 
-# Install dependencies
+## Install dependencies
 
 ```Dart
 flutter pub add http
