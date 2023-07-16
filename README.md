@@ -13,6 +13,7 @@ flutter pub add http
 
 ## ./lib/model/personlist.dart
 <p>สร้าง class PersonList แล้วมีการระบุตัวแปรที่เป็น results เหมือน JSON response</p>
+<p>ใน PersonList() มีการระบุ fromJson แล้วมีการ Map<String, dynamic> ที่ตัวแปร json แล้วมีการกำหนด ข้อมูลจาก json['head'] ให้ตัวแปร ที่ตั้งไว้ </p>
 
 ```Dart
 class PersonList {
