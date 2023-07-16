@@ -55,8 +55,18 @@ class PersonListItem {
 provider ใช้ในการดึง Data มา แบบ json แล้ว import model มา
 โดย APIs ที่ใช้ในครั้งนี้จะใช้เป็น SWAPI มาเป็นตัวอย่างในการดึงครับ
 </p>
+
 ```Dart
 import 'dart:convert';
+
+import 'package:flutter_application_3/model/peronlist.dart';
+import 'package:http/http.dart';
+
+class Provider {
+  Future<PersonList> getPeronList() async {
+    var uri = Uri.http("swapi.dev", "api/people/");
+    Response res = await get(uri);
+    if (res.staimport 'dart:convert';
 
 import 'package:flutter_application_3/model/peronlist.dart';
 import 'package:http/http.dart';
@@ -76,5 +86,12 @@ class Provider {
     }
   }
 }
-
+rsonModel);
+      return personModel;
+    } else {
+      print("Can not get person list");
+      throw "Service error ";
+    }
+  }
+}
 ```
