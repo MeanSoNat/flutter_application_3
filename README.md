@@ -11,7 +11,9 @@ flutter pub add http
 ## Generate JSON to Dart
 แปลง json response ด้วย <strong><a href="https://app.quicktype.io/">QuickType</a></strong>
 
-## lib/model/personlist.dart
+## ./lib/model/personlist.dart
+<p>สร้าง class PersonList แล้วมีการระบุตัวแปรที่เป็น results เหมือน JSON response</p>
+
 ```Dart
 class PersonList {
   PersonList();
